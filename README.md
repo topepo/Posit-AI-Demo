@@ -19,6 +19,9 @@ I'll use these example data:
 
 ```r
 # Drug-drug interaction data
-data_path <- "https://raw.githubusercontent.com/topepo/Posit-AI-Demo/main/qsar_data.RData"
+data_path <- "https://raw.githubusercontent.com/topepo/Posit-AI-Demo/main/example_data.RData"
 load(url(data_path))
+
+monitoring_path <- "https://raw.githubusercontent.com/topepo/Posit-AI-Demo/main/monitoring_data.RData"
+load(url(monitoring_path))
 ```
