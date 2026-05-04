@@ -6,14 +6,14 @@
 2. Make an account
 3. Choose _New Session_
 4. Choose 
-  - _Positron Pro_
-  - 8 CPU
-  - 16 GB memory
+   - _Positron Pro_
+   - 8 CPU
+   - 16 GB memory
 5. _Launch_
 
 ## Data
 
-Don't load proprietary data here. This is a temparary server. 
+Don't load proprietary data here. This is a temporary server. 
 
 I'll use these example data: 
 

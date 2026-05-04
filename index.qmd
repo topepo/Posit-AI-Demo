@@ -14,14 +14,92 @@ institute: "Posit PBC"
 library(tidymodels)
 ```
 
+## My Background
+
+I'm a Ph.D. Biostatistician: 
+
+- 6 years in molecular diagnostics for infectious diseases
+	- nonclinical and clinical
+	- assay development
+	- algorithms for instrumented diagnostics
+- 12 years in drug discovery (Pfizer)
+	- Mostly early discovery (med chem, comp bio, etc)
+	- a lot of machine learning across the company. 
+- Joined Posit in 2016 to work on tidymodels
+
 ## Posit AI
 
+A paid, subscription-based product. 
+
+  - [user guide](https://docs.posit.co/posit-ai/user/) 
+  - [FAQ](https://docs.posit.co/posit-ai/user/faq/)
+
+There are currently two main components: 
+
+  - [Posit Assistant](https://posit-dev.github.io/assistant/docs/getting-started): available in Positron, RStudio, and the command line.
+  - [Next Edit Suggestions (NES)](https://simonpcouch.com/blog/2026-03-06-nes/)
 
 
+## The Argument for Posit AI
 
+We want to create AI tooling to help you get your work done effectively, efficiently, and _safely_. 
 
+<br> 
 
+Part of what makes this attractive is that it is an AI system driven by data science experts who understand the amazing things AI can do and where it can fall short. 
 
+<br> 
 
+While LLMs can be incredibly intelligent, they are not always _wise_. Data analysis is somewhat of an art, and we are doing everything we can to ensure you avoid pitfalls. 
+
+## Machine Learning as an Example
+
+It is easy to accidentally commit methodological errors that might not show up until new data are obtained. 
+
+- information leakage
+- overfitting to the predictors
+- inappropriate data spending and/or resampling strategy
+
+These issues are fairly common and are reinforced in the LLMs directly and indirectly. 
+
+## "Why did you go straight to the test set?"
+
+> That's a fair question, and I don't have a great answer.
+
+. . .
+
+> Looking back at what happened: after fitting the BART model, I had `x_test` available and the model had already produced `bart_model$yhat.test` predictions (because I passed `x.test` to the `bart()` function). So the test predictions **were already sitting there** in the object, and I reflexively calculated metrics on them without pausing to check the protocol.
+
+. . . 
+
+> ...
+> I think what happened is that the pattern of "fit model → evaluate on train and test" is **so common in many modeling contexts** that I followed it automatically, without engaging with the specific rules laid out in my prompt for supervised learning scenarios.
+
+## How do we do better? 
+
+Prompting and skills go a long way. 
+
+<br> 
+
+Another tool is to place implicit guardrails into the system. 
+
+ - Use a syntax that follows a specific and effective methodology
+ - Quietly and implicitly enforce a good data usage protocol
+ - Ofuscate APIs that lead to bad behavior
+
+Not coincidentally, this has always been a design goal [(video)](https://www.youtube.com/watch?v=015rGZe2Lkk) for tidymodels. 
+
+## Evaluating AI Systems
+
+If/when you evaluate this or other LLM tools to determine their accuracy, keep a few things in mind: 
+
+ - Once you measure a task, it is in the training set.
+ - Use currently unknown and/or anonymized data.  
+ - LLMs already know a lot more than we may realize. 
+ - Measure repeatability; stochasticity requires replication of tasks. 
+ - There are a lot of [basic analytical tools](https://topepo.github.io/2025_NYR/#/title-slide) to help quantify effectiveness. 
+
+# Questions Before the Demo? {background-color="#F7AA14FF"}
 
 # Thanks for listening! {background-color="#FAE093FF"}
+
