@@ -18,8 +18,7 @@ Don't load proprietary data here. This is a temporary server.
 I'll use these example data: 
 
 ```r
-# Drug-drug ingeraction data
+# Drug-drug interaction data
 data_path <- "https://raw.githubusercontent.com/topepo/Posit-AI-Demo/main/qsar_data.RData"
 load(url(data_path))
 ```
-
