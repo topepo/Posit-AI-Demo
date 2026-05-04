@@ -1,0 +1,27 @@
+---
+title: "Posit AI Demo"
+author: "Max Kuhn"
+institute: "Posit PBC"
+---
+
+# Sides + sources on github: <br> `topepo/Posit-AI-Demo`  {background-color="#B25D91FF"}
+
+```{r}
+#| label: pkgs
+#| results: hide
+#| echo: false
+
+library(tidymodels)
+```
+
+## Posit AI
+
+
+
+
+
+
+
+
+
+# Thanks for listening! {background-color="#FAE093FF"}
