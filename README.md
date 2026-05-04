@@ -2,7 +2,7 @@
 
 ## Server
 
-1. Go to LNIK
+1. Go to LINK in zoom chat
 2. Make an account
 3. Choose _New Session_
 4. Choose 
